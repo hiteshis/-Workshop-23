@@ -63,18 +63,20 @@
 									</header>
 
 									<p>
-										Reinforcement learning (RL) is a powerful paradigm for learning from experience and optimizing complex systems. Recent advances in large models have shown remarkable capabilities in understanding and generation on multiple modalities. However, the fact that these models may generate outputs that are inaccurate, inappropriate, or harmful to the human recipients or society remains an issue, and RLHF might play a vital role in improving the performance and alignment of these models by providing them with human feedback that can guide their learning and generation processes. For example, RLHF can help these models to learn from human preferences or evaluations on their outputs, to adapt to human feedback or advice on specific tasks or domains, and to correct their errors or biases based on human corrections or demonstrations. RLHF can also help these models to generate outputs that are more relevant, coherent, diverse, and ethical for the human users and contexts. The goal of this workshop is to bring together researchers and practitioners from different disciplines, such as computer science, psychology, cognitive science, and operations research, to discuss the latest advances and challenges in RLHF. The workshop will cover topics such as:
-
+										Reinforcement learning (RL) has long been proposed as a powerful paradigm for learning, from interaction, to solve sequential decision-making problems. Very recently, there has been a surge of work using RL to align large language models (LLMs) to human values through the paradigm of RL from human feedback (RLHF). Inspired by the idea of alignment through inverse reinforcement learning, these approaches use human preference data to learn a reward function approximating human values and use this reward to finetune LLMs with RL. RLHF has taken a step in helping solve the outstanding problems with language models by making them more similar to a conversational partner, more steerable, more relevant, and more aligned. Additionally, one can also see it the other way around: viewing instruction-following assistants as RL agents. These language-based models solve some of the problems of pure-RL agents such as the ability to flexibly multitask and use pretrained experience instead of being trained from scratch.
+                                    </p>
+                                    <p>
+                                        The aim of this workshop is to provide a stage for researchers in this exciting field to define common challenges and questions, to exchange and consolidate best practices, and to push the advance of tools and benchmarks. As an indication, this workshop aims to make progress on the following open questions:
 										<ul>
-										<li>  Methods and algorithms for learning from different types of human feedback, such as preferences, demonstrations, corrections, evaluations, and advice </li>
-										<li>  Models and metrics for evaluating the quality and reliability of human feedback, and for handling inconsistencies, biases, and noise in human feedback </li>
-										<li>  Techniques and tools for eliciting, collecting, and aggregating human feedback from diverse sources, such as crowdsourcing platforms, online platforms, and user studies </li>
-										<li>  Ethical and social implications of RLHF, such as ensuring fairness, accountability, transparency, and privacy of the agents and the humans involved </li>
-										<li>  Applications and case studies of RLHF in various domains, such as robotics, games, education, health care, and social good </li>
-										<li>  Efficiently fine-tune language models with RLHF for new downstream tasks? </li>
+										<li>  What are the advantages of fine-tuning LLMs with RL compared to behavioral cloning/supervised learning, and on what tasks? </li>
+										<li>  What are the recommended methods for training reward functions using human feedback? In what ways can various forms of feedback, such as preferences, demonstrations, and advice, be utilized? How can the quality of human feedback be assessed? </li>
+										<li>  What approaches should be considered when training RLLM agents using pretrained LMs? This includes considerations for hyperparameters, reproducibility, algorithms, generation strategies, and the use of parameter-efficient fine-tuning. </li>
+										<li>  How can RL be utilized to develop conversational AI that is capable of generating truthful responses? </li>
+										<li>  Can RLLM agents effectively handle tasks in formal domains that involve automated checks for completion, such as mathematics (using a proof system) or programming (interacting with a compiler or interpreter)? </li>
+										<li>  In what ways can game-playing agent techniques, such as self-play and multi-agent dynamics, be utilized to enhance the performance of RLLM agents? </li>
 										</ul>
 
-										We hope to connect researchers from the communities of deep learning, reinforcement learning, language models, and to induce collaborations in this exciting new domain, while providing a platform to discuss recent developments, challenges and tradeoffs. 
+										The field is emerging, and we expect to formalize many other questions as the workshop takes place. The workshop will additionally aim at fostering discussions around the ethical implications of RLLM research (whose preferences are we optimizing?), as well as serve as a platform for the presentation of tools and frameworks that make training RLLM agents easier and more accessible to a wider community.
 
 										
 									</p>
